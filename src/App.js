@@ -1,0 +1,12 @@
+import React from "react";
+import './App.css';
+
+function App() {
+  return (
+    <>
+    <h3>Hello Hotel</h3>
+    </>
+  );
+}
+
+export default App;
