@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Home = () => {
+function Error() {
     return (
         <div>
-            welcome Home
+            hello from error page
         </div>
     )
 }
 
-export default Home
+export default Error
