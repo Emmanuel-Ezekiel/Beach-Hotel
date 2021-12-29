@@ -13,17 +13,16 @@ function Navbar() {
         <div>
            <nav className="navbar">
                <div className="nav-center">
-                   <div className="nav-header">
+                <div className="nav-header">
                        <Link to="/" className='links'>
                            <h2>BEACH <span>HOTEL</span></h2>
                        </Link>
-
-                       <button
+                     <button
                         type="button" className="nav-btn"
                         onClick={handleToggle}>
                         <FaAlignRight className="nav-icon" />
-                       </button>
-                   </div>
+                    </button>
+                </div>
 
                    <ul className={isOpen ? "nav-links show-nav" : "nav-links"}>
                        <li>
