@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Hero from '../components/Hero'
 function Rooms() {
     return (
-        <div>
-            hello room pages
-        </div>
+        <>
+        <Hero hero="roomsHero" />
+        </>
     )
 }
 
