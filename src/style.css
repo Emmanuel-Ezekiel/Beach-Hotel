@@ -109,7 +109,8 @@ h6 {
 .links {
   text-decoration: none;
   border: 2px solid black;
-  height: 50px;
+  height: 30px;
+  font-size: 0.5rem;
 }
 
 .links h2 {
