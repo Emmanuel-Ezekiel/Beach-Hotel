@@ -6,7 +6,7 @@ function Navbar() {
     const [ isOpen, setIsOpen] = useState(false)
 
     const handleToggle = () => {
-        setIsOpen(!false)
+        setIsOpen(!isOpen)
     }
 
     return (
@@ -27,6 +27,9 @@ function Navbar() {
                    <ul className={isOpen ? "nav-links show-nav" : "nav-links"}>
                        <li>
                            <Link to="/">Home</Link>
+                       </li>
+                       <li>
+                           <Link to="/about">About</Link>
                        </li>
                        <li>
                            <Link to="/rooms">Rooms</Link>

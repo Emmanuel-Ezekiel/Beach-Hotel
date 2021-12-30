@@ -117,7 +117,7 @@ h6 {
   color: black
 }
 .links span {
-  color: bisque
+  color: bisque;
 }
 
 
@@ -162,7 +162,7 @@ h6 {
 }
 
 .show-nav {
-  height: 100px;
+  height: 150px;
 }
 
 @media screen and (min-width: 768px) {
@@ -263,6 +263,7 @@ h6 {
   padding: 5rem 0;
   background: var(--darkGrey);
   text-align: center;
+  
 }
 
 .services-center {
@@ -274,10 +275,15 @@ h6 {
   grid-column-gap: 50px;
 }
 
+.service {
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
 .service span {
   display: inline-block;
   color: var(--primaryColor);
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
 }
 
