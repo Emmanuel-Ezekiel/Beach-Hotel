@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Title from './Title'
-import { FaSwimmingPool, FaCocktail} from 'react-icons/fa'
+import { FaSwimmingPool, FaCocktail } from 'react-icons/fa'
 import { GiWaveSurfer } from 'react-icons/gi'
 import { CgGym } from 'react-icons/cg'
 
