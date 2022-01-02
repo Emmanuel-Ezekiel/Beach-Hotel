@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import items from './data'
 const RoomContext = React.createContext()
 function RoomProvider(props) {
@@ -6,25 +6,27 @@ function RoomProvider(props) {
         rooms: [],
         sortedRooms: [],
         featuredRooms: [],
-        loading: true
+        loading: true,
     })
-
     const [ formData, setFormData ] = useState(items)
-    console.log(formData)
+    // getting data
 
-    const allData = () => {
-        let tempItems = formData.map(item => {
-            let idd = item.sys.id
-            let images = item.fields.images.map(image => image.fields.file.url)
-            let room =
+
+
+    useEffect(() => {
+        let rooms = formData
+        let featuredRooms = rooms.filter(room => room.fields.featured === true)
+        setGetData({
+            rooms,
+            featuredRooms,
+            sortedRooms: rooms,
+            loading: false,
         })
-    }
-
-
+    }, [formData])
 
     return (
         <>
-        <RoomContext.Provider value={'hello'}>
+        <RoomContext.Provider value={{ ...getData }}>
             {props.children}
         </RoomContext.Provider>       
         </>
