@@ -6,7 +6,7 @@ import Rooms from "./pages/Rooms";
 import About from "./pages/About";
 import SingleRoom from "./pages/SingleRoom";
 import Error from "./pages/Error";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar"
 
 function App() {

@@ -18,12 +18,22 @@ function Room( { room }) {
                         Features
                     </Link>
                     <p className="room-info">
-                        {names}
+                        {name}
                     </p>
                 </div>
             </article>
         </>
     )
+}
+
+Room.protoTypes = {
+    room:PropTypes.shape({
+        name:PropTypes.string.isRequired,
+        slug:PropTypes.string.isRequired,
+        images:PropTypes.arrayOf(PropTypes.string).isRequired,
+        name:PropTypes.number.isRequired,
+    })
+
 }
 
 export default Room
