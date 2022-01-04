@@ -9,12 +9,25 @@ import { RoomContext } from '../Context'
 
 
 export default class SingleRoom extends Component {
-
     constructor(props) {
         super(props);
         console.log(this.props)
+        // this.state = {
+        //     slug: this.props.match.params.slug,
+        //     defaultBcg
+        // }
     }
+
+    // componentDidMount() {
+    // const { slug } = this.props.match.params;
+    // console.log(slug)
+    // }
+
+    static contextType = RoomContext
     render() {
+        
+        const { getRoom } = this.context;
+        // const room = getRoom(this.state.slug)
         return (
             <div>
                 hello singleroom page

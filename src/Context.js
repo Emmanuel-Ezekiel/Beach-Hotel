@@ -66,6 +66,7 @@ export default class RoomProvider extends Component {
 
     componentDidMount() {
         let rooms = this.formatData(items)
+        console.log(rooms)
         let featuredRooms = rooms.filter(room => room.featured === true)
         this.setState({
             rooms,
@@ -86,11 +87,17 @@ export default class RoomProvider extends Component {
         return tempItems
     }
 
-    getRoom = (slug) => {
+    
+     getRoom = (slug) => {
         let tempRooms = [...this.state.rooms]
         const room = tempRooms.find(room => room.slug === slug)
         return room;
     }
+//      mapStateToProps = (slug, ownProps) => {
+//         let tempRooms = [...this.state.rooms]
+//   const room = tempRooms.find(user => user.slug === ownProps.params.slug)
+//   return room
+// }
 
     render() {
         return (

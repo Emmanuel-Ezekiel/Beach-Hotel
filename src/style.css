@@ -165,7 +165,15 @@ h6 {
   height: 150px;
 }
 
+
 @media screen and (min-width: 768px) {
+
+  .links {
+  text-decoration: none;
+  border: 2px solid black;
+  height: 50px;
+  font-size: 1rem;
+}
   .nav-btn {
     display: none;
   }
