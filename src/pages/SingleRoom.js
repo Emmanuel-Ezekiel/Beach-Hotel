@@ -30,7 +30,7 @@ export default class SingleRoom extends Component {
         // const room = getRoom(this.state.slug)
         return (
             <div>
-                hello singleroom page
+                welcome to singleroom page
             </div>
         )
     }
